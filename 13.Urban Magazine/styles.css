@@ -1,0 +1,167 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  padding-left: 30px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #d2dde1;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+.nav {
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+
+.nav .nav__icon {
+  margin-bottom: auto;
+}
+
+.nav .nav__list {
+  margin-bottom: auto;
+  display: flex;
+  list-style: none;
+  transform: rotate(-90deg);
+  font-weight: 600;
+}
+
+.nav .nav__list > * {
+  margin-right: 10px;
+}
+
+.header {
+  align-self: start;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header .header__title {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header .header__icon {
+  margin-right: 15px;
+}
+
+.pagination {
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.pagination .pagination__number--current {
+  text-decoration: line-through;
+}
+
+.slider {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider .slider__arrow {
+  font-size: 50px;
+}
+
+.slider .slider__arrow:first-child {
+  margin-right: 20px;
+}
+
+.slider .slider__arrow:last-child {
+  margin-left: 20px;
+  transform: rotate(0deg);
+  -webkit-transform: scaleX(-1);
+}
+
+.slider .slider__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  background-color: white;
+  grid-gap: 20px;
+}
+
+.slider__content .slider__photo {
+  background-image: url(https://www.adorama.com/alc/wp-content/uploads/2017/08/shutterstock_415922566-1024x657.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  justify-self: center;
+}
+
+.info .info__pre-title {
+  text-transform: uppercase;
+  color: #3498db;
+  font-weight: 300;
+}
+
+.info .info__pre-title,
+.info .info__title,
+.info .info__intro {
+  margin-bottom: 40px;
+}
+
+.info .info__title {
+  font-size: 44px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.info .info__intro {
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.info .info__date {
+  text-transform: uppercase;
+  font-weight: 300;
+}

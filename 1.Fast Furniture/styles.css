@@ -1,0 +1,234 @@
+:root {
+  --colorOne: #d5ecf4;
+  --colorTwo: #e5efd9;
+  --colorThree: #fcf8c0;
+  --colorFour: #ebebeb;
+  --colorFive: #f4c5c3;
+  --colorSix: #e5efd8;
+  --colorSeven: #fcf8c0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-style: oblique;
+  opacity: 0.6;
+  margin-top: 0;
+}
+
+.header .header__column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__nav span {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header__nav li {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.header__nav li:last-child {
+  margin-bottom: 0;
+}
+
+.grid__nav1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.grid__nav1 .first {
+  font-weight: 600;
+  font-size: 40px;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.grid__nav1 .second {
+  font-size: 30px;
+  font-weight: 200;
+  opacity: 0.6;
+  margin-bottom: 130px;
+}
+
+.grid__nav1 .third {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+.grid__nav2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.grid__nav2 li {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.grid__nav3 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.grid__nav3 li {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 200;
+}
+.grid__nav4 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.grid__nav4 .first {
+  font-weight: 600;
+  font-size: 40px;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.grid__nav4 .second {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.grid__nav5 {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.grid__nav5 .first {
+  font-weight: 600;
+  font-size: 40px;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.grid__nav5 .second {
+  font-size: 30px;
+  font-weight: 200;
+  opacity: 0.8;
+  margin-bottom: 130px;
+}
+
+.grid__nav5 .third {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.grid__nav6 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.grid__nav6 li {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 200;
+}
+.grid .grid__item span {
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+}
+.grid {
+  grid-auto-rows: 300px;
+  grid-gap: 20px;
+}
+
+.grid .grid__item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid .grid__item:first-child {
+  grid-row: span 2;
+  background-color: var(--colorOne);
+}
+
+.grid .grid__item:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://www.designboom.com/wp-content/dbsub/401218/2017-05-02/fullscreen_1493736159_f4ee9d38a6876fd460f44d9de3e7cfa8.jpg);
+}
+
+.grid .grid__item:nth-child(3) {
+  background-color: var(--colorTwo);
+}
+
+.grid .grid__item:nth-child(4) {
+  grid-row: span 2;
+  background-image: url(https://www.baltimoreathome.com/wp-content/uploads/2018/01/Smart-Mid-Century-Furniture-Inspirations-2.jpg);
+}
+
+.grid .grid__item:nth-child(5) {
+  background-color: var(--colorThree);
+}
+
+.grid .grid__item:nth-child(6) {
+  background-color: var(--colorFour);
+}
+
+.grid .grid__item:nth-child(7) {
+  background-image: url(https://i.pinimg.com/564x/63/7e/50/637e50735a029346b635e45c3fae383d.jpg);
+}
+
+.grid .grid__item:nth-child(8) {
+  grid-area: span 2 / span 2;
+  background-color: var(--colorFive);
+}
+
+.grid .grid__item:nth-child(9) {
+  grid-row: span 2;
+  background-image: url(https://i.pinimg.com/564x/7b/01/09/7b0109867696e5af724d57567ddcdaa9.jpg);
+}
+
+.grid .grid__item:nth-child(10) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/564x/9f/94/ab/9f94abc77f2ef8673a7242854dd00f0b.jpg);
+}
+
+.grid .grid__item:nth-child(11) {
+  background-image: url(https://i.pinimg.com/564x/92/44/02/9244027d623dfee6a7198e2237336daf.jpg);
+}
+
+.grid .grid__item:nth-child(12) {
+  background-color: var(--colorOne);
+}

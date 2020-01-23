@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Two</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Add meals</h1>
+    </header>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <span class="item__icon"><span class="icon__emoji">🥪</span></span
+          ><span class="item__text"> All</span>
+        </li>
+        <li class="navigation__item">
+          <span class="item__icon"><span class="icon__emoji">🍔</span></span
+          ><span class="item__text"> Hamb</span>
+        </li>
+        <li class="navigation__item">
+          <span class="item__icon"><span class="icon__emoji">🥩</span></span
+          ><span class="item__text"> Meat</span>
+        </li>
+        <li class="navigation__item">
+          <span class="item__icon"><span class="icon__emoji">🥗</span></span
+          ><span class="item__text"> Veggies</span>
+        </li>
+      </ul>
+    </nav>
+    <!-- 텍스트 때문에 하나의 아이콘 크기만 다른 경우는 위와 같이 span안에 span을
+    만들어 icon과 emoji를 분리시킴으로써 상하위 관계를 만든다.
+     그런 다음 css에서 emoji과 text 폰트 사이즈를 조정함으로써 모든 아이콘 크기를 일치시킨다. -->
+    <section class="featured">
+      <h2 class="featured__title">Featured meals</h2>
+      <div class="featured__wrapper">
+        <article class="featured-meal">
+          <h4 class="featured-meal__title">Salmon Tacos</h4>
+          <button class="featured-meal__button">➕</button>
+        </article>
+        <article class="featured-meal">
+          <h4 class="featured-meal__title">Crab Cake Poppers</h4>
+          <button class="featured-meal__button">➕</button>
+        </article>
+        <article class="featured-meal">
+          <h4 class="featured-meal__title">Thai Chicken Coconut Curry</h4>
+          <button class="featured-meal__button">➕</button>
+        </article>
+        <article class="featured-meal">
+          <h4 class="featured-meal__title">Garlic Brown Sugar Pork Chops</h4>
+          <button class="featured-meal__button">➕</button>
+        </article>
+        <article class="featured-meal">
+          <h4 class="featured-meal__title">Skillet Burger</h4>
+          <button class="featured-meal__button">➕</button>
+        </article>
+        <article class="featured-meal">
+          <h4 class="featured-meal__title">
+            Chickpea Apple Broccoli Salad with Honey Dijon Dressing
+          </h4>
+          <button class="featured-meal__button">➕</button>
+        </article>
+        <article class="featured-meal">
+          <h4 class="featured-meal__title">Chinese Sausage Fried Rice</h4>
+          <button class="featured-meal__button">➕</button>
+        </article>
+      </div>
+    </section>
+    <section class="recipies">
+      <ul class="recipies__list">
+        <li class="recipe">
+          <span class="recipe__name">Pasta Carbonara</span
+          ><button class="recipe__btn">➕</button>
+        </li>
+        <li class="recipe">
+          <span class="recipe__name">Lasagna</span
+          ><button class="recipe__btn">➕</button>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
